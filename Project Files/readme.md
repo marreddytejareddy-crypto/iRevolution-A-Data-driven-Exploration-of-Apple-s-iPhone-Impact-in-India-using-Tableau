@@ -1,5 +1,11 @@
 # Project Files: iRevolution Flask App
 
+<div align="center">
+  <a href="../Document/readme.md">
+    <img src="https://img.shields.io/badge/Read_Documentation-Project_Insights-000000?style=for-the-badge&logo=readdotcv&logoColor=white" alt="Read Documentation" />
+  </a>
+</div>
+
 This folder contains the core source code for the "iRevolution" Flask web application, an interactive platform built to seamlessly embed and showcase Tableau dashboards detailing Apple's impact in India.
 
 ## Folder Structure
