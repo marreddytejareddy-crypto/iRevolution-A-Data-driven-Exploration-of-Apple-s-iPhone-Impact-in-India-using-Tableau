@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero-section">
+    <div class="hero-content">
+        <h1 class="hero-title">Apple's iPhone Impact in India</h1>
+        <p class="hero-subtitle">A data-driven exploration of Apple's growth, market strategy, and revolution in the Indian smartphone landscape, visualized through interactive Tableau dashboards and stories.</p>
+        
+        <div class="hero-actions">
+            <a href="{{ url_for('dashboard') }}" class="btn btn-primary">
+                View Dashboard
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="{{ url_for('story') }}" class="btn btn-secondary">
+                Read the Story
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            </a>
+        </div>
+    </div>
+    <div class="hero-visual">
+        <div class="hero-shape shape-1"></div>
+        <div class="hero-shape shape-2"></div>
+    </div>
+</section>
+
+<section class="features-section">
+    <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>Interactive Dashboard</h3>
+        <p>Explore deep metrics on sales, market share, and demographic adoption of the iPhone in India.</p>
+    </div>
+    <div class="feature-card">
+        <div class="feature-icon">📖</div>
+        <h3>Data Story</h3>
+        <p>Follow the chronological narrative of Apple's strategic moves and milestones in the Indian market.</p>
+    </div>
+    <div class="feature-card">
+        <div class="feature-icon">💡</div>
+        <h3>Insights</h3>
+        <p>Gain actionable insights into consumer behavior and market trends driven by real data.</p>
+    </div>
+</section>
+{% endblock %}

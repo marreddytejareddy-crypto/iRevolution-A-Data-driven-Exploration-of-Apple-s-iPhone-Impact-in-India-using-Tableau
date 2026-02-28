@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="viz-header">
+    <div class="viz-header-content">
+        <h2>Data Story</h2>
+        <p>The chronological journey of Apple's strategy in India</p>
+    </div>
+</div>
+
+<div class="viz-container">
+    <div class="tableau-wrapper">
+        <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+        <tableau-viz 
+            id="tableauStoryViz" 
+            src="https://public.tableau.com/views/TejaBook5/Story1" 
+            device="desktop"
+            toolbar="bottom" 
+            hide-tabs 
+            width="100%" 
+            height="100%">
+        </tableau-viz>
+    </div>
+</div>
+{% endblock %}
